@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-
+#import "MainViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    UINavigationController *nav;
+    MainViewController *main_controller;
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;

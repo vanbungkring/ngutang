@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0C5EAA3B19618AE9004D79AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EAA3A19618AE9004D79AA /* main.m */; };
 		0C5EAA3E19618AE9004D79AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EAA3D19618AE9004D79AA /* AppDelegate.m */; };
-		0C5EAA4119618AE9004D79AA /* Ngutang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EAA3F19618AE9004D79AA /* Ngutang.xcdatamodeld */; };
 		0C5EAA4319618AE9004D79AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5EAA4219618AE9004D79AA /* Images.xcassets */; };
 		0C5EAA4F19618AE9004D79AA /* NgutangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EAA4E19618AE9004D79AA /* NgutangTests.m */; };
+		0C5EAA5E19618B15004D79AA /* Ngutang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EAA5B19618B15004D79AA /* Ngutang.xcdatamodeld */; };
+		0C5EAA6219618BD8004D79AA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5EAA6119618BD8004D79AA /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +31,13 @@
 		0C5EAA3A19618AE9004D79AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C5EAA3C19618AE9004D79AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C5EAA3D19618AE9004D79AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C5EAA4019618AE9004D79AA /* Ngutang.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ngutang.xcdatamodel; sourceTree = "<group>"; };
 		0C5EAA4219618AE9004D79AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C5EAA4819618AE9004D79AA /* NgutangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NgutangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5EAA4D19618AE9004D79AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C5EAA4E19618AE9004D79AA /* NgutangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NgutangTests.m; sourceTree = "<group>"; };
+		0C5EAA5C19618B15004D79AA /* Ngutang.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ngutang.xcdatamodel; sourceTree = "<group>"; };
+		0C5EAA6019618BD8004D79AA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0C5EAA6119618BD8004D79AA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		0C5EAA2C19618AE8004D79AA = {
 			isa = PBXGroup;
 			children = (
+				0C5EAA5819618B15004D79AA /* app */,
 				0C5EAA3719618AE8004D79AA /* Ngutang */,
 				0C5EAA4B19618AE9004D79AA /* NgutangTests */,
 				0C5EAA3619618AE8004D79AA /* Products */,
@@ -79,7 +83,6 @@
 				0C5EAA3C19618AE9004D79AA /* AppDelegate.h */,
 				0C5EAA3D19618AE9004D79AA /* AppDelegate.m */,
 				0C5EAA4219618AE9004D79AA /* Images.xcassets */,
-				0C5EAA3F19618AE9004D79AA /* Ngutang.xcdatamodeld */,
 				0C5EAA3819618AE9004D79AA /* Supporting Files */,
 			);
 			path = Ngutang;
@@ -109,6 +112,48 @@
 				0C5EAA4D19618AE9004D79AA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C5EAA5819618B15004D79AA /* app */ = {
+			isa = PBXGroup;
+			children = (
+				0C5EAA5919618B15004D79AA /* controller */,
+				0C5EAA5A19618B15004D79AA /* model */,
+				0C5EAA5D19618B15004D79AA /* view */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		0C5EAA5919618B15004D79AA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C5EAA5F19618BAB004D79AA /* main */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0C5EAA5A19618B15004D79AA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0C5EAA5B19618B15004D79AA /* Ngutang.xcdatamodeld */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0C5EAA5D19618B15004D79AA /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0C5EAA5F19618BAB004D79AA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				0C5EAA6019618BD8004D79AA /* MainViewController.h */,
+				0C5EAA6119618BD8004D79AA /* MainViewController.m */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +205,7 @@
 				TargetAttributes = {
 					0C5EAA3419618AE8004D79AA = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = EF9SC2ZZ25;
 					};
 					0C5EAA4719618AE9004D79AA = {
 						CreatedOnToolsVersion = 6.0;
@@ -208,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C5EAA5E19618B15004D79AA /* Ngutang.xcdatamodeld in Sources */,
 				0C5EAA3E19618AE9004D79AA /* AppDelegate.m in Sources */,
 				0C5EAA3B19618AE9004D79AA /* main.m in Sources */,
-				0C5EAA4119618AE9004D79AA /* Ngutang.xcdatamodeld in Sources */,
+				0C5EAA6219618BD8004D79AA /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +361,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Ngutang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -325,7 +374,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Ngutang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -398,12 +449,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0C5EAA3F19618AE9004D79AA /* Ngutang.xcdatamodeld */ = {
+		0C5EAA5B19618B15004D79AA /* Ngutang.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0C5EAA4019618AE9004D79AA /* Ngutang.xcdatamodel */,
+				0C5EAA5C19618B15004D79AA /* Ngutang.xcdatamodel */,
 			);
-			currentVersion = 0C5EAA4019618AE9004D79AA /* Ngutang.xcdatamodel */;
+			currentVersion = 0C5EAA5C19618B15004D79AA /* Ngutang.xcdatamodel */;
 			path = Ngutang.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
